@@ -1,6 +1,6 @@
 #include <Arduino.h>
 /**
- * @file main.ino
+ * @file main.cpp
  * @brief Embedded Force Measurement System using FSR
  * @author Jaya
  * @date 2026-02-04
@@ -13,7 +13,7 @@
 int value =0;
 
 void setup() {
-
+    Serial.begin(9600);
     pinMode(A0, INPUT);
 }
 
